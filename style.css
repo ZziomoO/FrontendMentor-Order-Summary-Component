@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-color: #e0e8ff;
+    background-image: url("order/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+#text{
+    text-align: center;
+    margin: 25px;
+    margin-top: 35px;
+}
+#order{
+    margin-bottom: 25px;
+}
+#order div{
+    background-color: #f8f9fe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    border-radius: 10px;
+}
+#order div div{
+    justify-content: start;
+}
+#order div div div{
+    align-items: start;
+    flex-direction: column;
+    width: 120px;
+}
+#buttons{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 35px;
+}
+button{
+    width: 240px;
+    height: 35px;
+    background-color: #402ce4;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0px 15px 15px rgba(64,44,228, 0.2);
+    transition: all 0.2s;
+}
+button:hover{
+    background-color: #766cf1;
+}
+#text p{
+    font-size: 12px;
+    color: #999;
+}
+#text h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+#cancel{
+    font-weight: 900; 
+    text-decoration: none; 
+    font-size: 10px; 
+    color: #666;
+}
+#cancel:hover{
+    color: #333;
+}
+#bgimg{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+#change{
+    font-size: 10px;
+    margin: 10px;
+    color: #402ce4;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+#change:hover{
+    color: royalblue;
+}
+@media only screen and (max-width: 800px){
+    body{
+        background-image: url(order/images/pattern-background-mobile.svg);
+    }
+}
